@@ -1,0 +1,14 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: cloud-config-service
+  cloud:
+    config:
+      profile: git
+      server:
+        git:
+          uri: file://${user.home}/Documents/Dummy-Imdb-Microservices-Demo/
+          search-paths:
+          - distributed-config-repo/*

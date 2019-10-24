@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: movies-catalog-service
+
+
+  cloud:
+    config:
+      uri:
+      - http://localhost:8888
